@@ -1,33 +1,46 @@
 @import "tailwindcss";
-body{
+
+body {
   @apply bg-slate-950 font-serif selection:bg-black selection:text-green-500;
-};
-#links{
-  @apply bg-linear-to-r bg-clip-text from-sky-400 to-cyan-300 text-transparent text-lg
-  transition hover:text-sky-400 not-hover:duration-300 not-hover:transition duration-300 translate-x-50;
-};
-#buttons{
-  @apply bg-linear-to-r md:w-[30%] text-white font-semibold from-sky-600 to-cyan-500 rounded-br-2xl rounded-bl-2xl
-  rounded-tl-2xl rounded-tr-2xl shadow-cyan-500 shadow-sm
-  transition duration-300 hover:bg-sky-600
-  border border-sky-500/20 cursor-pointer w-[45%] lg:w-[30%] h-10;
-};
-.btn{
-  @apply bg-linear-to-r w-[50%] text-white font-semibold from-sky-600 to-cyan-500 rounded-br-2xl rounded-bl-2xl
-  rounded-tl-2xl rounded-tr-2xl shadow-cyan-500 shadow-sm
-  transition duration-300 hover:bg-sky-600 block m-auto
-  border border-sky-500/20 cursor-pointer h-10 mt-2;
-};
-label{
-  @apply text-white font-bold ml-7;
 }
-input{
-  @apply w-[90%] border text-center text-white border-sky-500/5 bg-white/5 h-10 rounded-br-2xl rounded-bl-2xl rounded-tl-2xl rounded-tr-2xl ml-5
-  placeholder:-translate-x-25 lg:placeholder:-translate-x-30 placeholder:text-white placeholder:text-sm not-focus:bg-none
-  focus:ring-1 focus:border-sky-400/5 outline-none duration-700 transition ease-in-out;
+
+#links {
+  @apply bg-gradient-to-r bg-clip-text from-sky-400 to-cyan-300 text-transparent text-base
+  transition duration-300 hover:opacity-80;
 }
-textarea{
-  @apply rounded-br-2xl rounded-bl-2xl rounded-tr-2xl rounded-tl-2xl lg:placeholder:-translate-x-30 placeholder:-translate-x-25 placeholder:translate-y-3
-  border-sky-600/5 bg-white/5 ml-5 w-[90%] h-20 text-center text-white placeholder:text-white
-  focus:ring-1 focus:border-sky-500/5 outline-none duration-700 transition ease-in-out;
+
+#buttons {
+  @apply bg-gradient-to-r text-white font-semibold from-sky-600 to-cyan-500
+  rounded-2xl shadow-cyan-500 shadow-sm
+  transition duration-300 hover:opacity-90
+  border border-sky-500/20 cursor-pointer
+  px-5 h-10 flex items-center gap-2;
+}
+
+.btn {
+  @apply bg-gradient-to-r text-white font-semibold from-sky-600 to-cyan-500
+  rounded-2xl shadow-cyan-500 shadow-sm
+  transition duration-300 hover:opacity-90
+  border border-sky-500/20 cursor-pointer
+  px-6 h-10;
+}
+
+label {
+  @apply text-white font-bold;
+}
+
+input {
+  @apply w-full border text-white border-sky-500/20 bg-white/5 h-10
+  rounded-2xl px-4
+  placeholder:text-white/50 placeholder:text-sm
+  focus:ring-1 focus:ring-sky-400/50 focus:border-sky-400/30
+  outline-none duration-300 transition ease-in-out;
+}
+
+textarea {
+  @apply w-full border border-sky-600/20 bg-white/5
+  rounded-2xl px-4 py-3 text-white
+  placeholder:text-white/50 placeholder:text-sm
+  focus:ring-1 focus:ring-sky-500/50 focus:border-sky-500/30
+  outline-none duration-300 transition ease-in-out resize-none;
 }
