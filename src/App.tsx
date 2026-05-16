@@ -185,7 +185,7 @@ export default function App() {
           <img
             className="w-56 h-72 sm:w-64 sm:h-80 md:w-72 md:h-96 lg:w-80 lg:h-[440px]
               rounded-xl object-cover shadow-2xl shadow-cyan-900/30"
-            src="/images/3d olamide.jpeg"
+            src="/images/olamide.jpg"
             alt="Olamide typing on his laptop"
           />
         </div>
